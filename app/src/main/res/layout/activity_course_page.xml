@@ -197,6 +197,7 @@
         android:layout_marginTop="45dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/app_name"
+        android:onClick="addToCart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/coursePageBg"
         app:layout_constraintTop_toBottomOf="@+id/coursePageText"

@@ -8,7 +8,9 @@ import ru.vaszol.e_commerce.adapter.CourseAdapter;
 import ru.vaszol.e_commerce.model.Category;
 import ru.vaszol.e_commerce.model.Course;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 
 import java.util.LinkedList;
@@ -50,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
         showAllCourses.setOnClickListener(v -> {
             showCoursesCategory(0);
         });
+    }
+
+    public void openShoppingCart(View view) {
+        Intent intent = new Intent(this, OderPage.class);
+        startActivity(intent);
     }
 
     private void setCourseRecycler(List<Course> courseList) {
