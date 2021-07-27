@@ -1,10 +1,10 @@
 package ru.vaszol.e_commerce.model;
 
 public class Course {
-    int id;
+    int id, category;
     String img, title, date, level, color, text;
 
-    public Course(int id, String img, String title, String date, String level, String color, String text) {
+    public Course(int id, String img, String title, String date, String level, String color, String text, int category) {
         this.id = id;
         this.img = img;
         this.title = title;
@@ -12,6 +12,7 @@ public class Course {
         this.level = level;
         this.color = color;
         this.text = text;
+        this.category = category;
     }
 
     public int getId() {
@@ -68,5 +69,13 @@ public class Course {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public int getCategory() {
+        return category;
+    }
+
+    public void setCategory(int category) {
+        this.category = category;
     }
 }
