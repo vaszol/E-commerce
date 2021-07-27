@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
         setCategoryRecycler(categoryList);
 
         List<Course> courseList = new LinkedList<>();
-        courseList.add(new Course(1,"java", "Профессия Java\nразработчик","1 января","начальный","#424345"));
-        courseList.add(new Course(2,"python","Профессия Python\nразработчик","10 января","начальный","#9FA52D"));
-        courseList.add(new Course(3,"unity","Профессия Unity\nразработчик","10 января","начальный","#DB4254"));
-        courseList.add(new Course(4,"front_end","Профессия Front-end\nразработчик","10 января","начальный","#B14935"));
-        courseList.add(new Course(5,"back_end","Профессия Back-end\nразработчик","10 января","начальный","#2C55A6"));
-        courseList.add(new Course(6,"full_stack","Профессия Full Stack\nразработчик","10 января","начальный","#0D0F29"));
+        courseList.add(new Course(1, "java", "Профессия Java\nразработчик", "1 января", "начальный", "#424345", "test"));
+        courseList.add(new Course(2, "python", "Профессия Python\nразработчик", "10 января", "начальный", "#9FA52D", "test"));
+        courseList.add(new Course(3, "unity", "Профессия Unity\nразработчик", "10 января", "начальный", "#DB4254", "test"));
+        courseList.add(new Course(4, "front_end", "Профессия Front-end\nразработчик", "10 января", "начальный", "#B14935", "test"));
+        courseList.add(new Course(5, "back_end", "Профессия Back-end\nразработчик", "10 января", "начальный", "#2C55A6", "test"));
+        courseList.add(new Course(6, "full_stack", "Профессия Full Stack\nразработчик", "10 января", "начальный", "#0D0F29", "test"));
 
         setCourseRecycler(courseList);
     }

@@ -9,7 +9,7 @@
     tools:context=".CoursePage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/coursePageBg"
         android:layout_width="65dp"
         android:layout_height="0dp"
         android:background="@color/asideBgColor"
@@ -77,15 +77,16 @@
         android:id="@+id/coursePageImage"
         android:layout_width="0dp"
         android:layout_height="230dp"
-        android:scaleType="centerCrop"
         android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:transitionName="courseImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/coursePageBg"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_java" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/coursePageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -95,17 +96,18 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/coursePageBg"
         app:layout_constraintTop_toBottomOf="@+id/coursePageImage" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/coursePageBg"
+        android:id="@+id/courseBg"
         android:layout_width="wrap_content"
+        app:cardElevation="0dp"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/coursePageBg"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
@@ -185,8 +187,8 @@
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@+id/coursePageBg" />
+        app:layout_constraintStart_toEndOf="@+id/coursePageBg"
+        app:layout_constraintTop_toBottomOf="@+id/courseBg" />
 
     <ImageButton
         android:id="@+id/addToCard"
@@ -194,8 +196,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/coursePageBg"
         app:layout_constraintTop_toBottomOf="@+id/coursePageText"
         app:srcCompat="@drawable/ic_add_to_card" />
 
