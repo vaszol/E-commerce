@@ -14,3 +14,7 @@ https://www.figma.com/file/DwgWsnahWOlnONjHMHko2O/Android-Design-App-(Courses-Ap
     добавлен адаптер курсов
     добавлены изображения курсов
     настройка отображения
+
+день четвертый
+    Добавил страницу курса
+    Отдельное Activity для детального описания курса
